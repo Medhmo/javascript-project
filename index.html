@@ -16,30 +16,59 @@
 
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <title>Document</title>
+    <title>Rock Paper and Scissors</title>
 </head>
 
 <body>
+    <h1 class="heading">Rock Paper and Scissors
 
-    <h1 class="heading">
-        <img class="logo" src="assets/images/Rock paper scissors logo.png" alt="logo">Rock , Paper , Scissors
     </h1>
 
     <!-- Gaming area -->
+    <!-- player Gaming area -->
+    <h2>
+        Your Score :
+        <span id="player-score">0</span>
+        <span id="player-hand"> hand</span>
+    </h2>
+
     <div class="gaming-area">
+        <div class="player-area" id="player">
+            <img src="/assets/images/rock (2).png" alt="rock" id="player-rock">
+            <img src="/assets/images/paper.final version.png " alt="paper" id="player-paper">
+            <img src="/assets/images/scissors (1).png" alt="scissor" id="player-scissor ">
+
+        </div>
 
     </div>
+    <!-- computer Gaming area -->
 
-    <!-- Score Area -->
-
-    <div class="score-area">
-        <p class="scores">Player Score <span id="player-score">0</span></p>
-        <p class="scores">Computer Score <span id="computer-score">0</span></p>
-    </div>
-
+    <h2>
+        Computer Score :
+        <span id="computer-score">0</span>
+        <span id="computer-hand"> hand</span>
+    </h2>
 
 
-    <script src="assets/js/script.js"></script>
+    <div class="gaming-area">
+        <div class="computer-area" id="computer">
+            <img src="/assets/images/rock (2).png" alt="rock" id="computer-rock">
+            <img src="/assets/images/paper.final version.png " alt="paper" id="computer-paper">
+            <img src="/assets/images/scissors (1).png" alt="scissor" id="computer-scissor ">
+
+        </div>
+
+
+        <!-- Score Area
+
+        <div class="score-area">
+            <p class="scores">Player Score <span id="player-score">0</span></p>
+            <p class="scores">Computer Score <span id="computer-score">0</span></p>
+        </div> -->
+
+        <!-- javascript link -->
+
+        <script src="assets/js/script.js"></script>
 </body>
 
 </html>
