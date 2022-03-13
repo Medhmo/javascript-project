@@ -20,19 +20,21 @@
 </head>
 
 <body>
-    <h1 class="heading">Rock Paper and Scissors
-
+    <div class="headind-d">
+        <h1 class="heading">Rock Paper and Scissors
+    </div>
     </h1>
 
     <!-- Gaming area -->
     <!-- player Gaming area -->
-    <h2>
-        Your Score :
-        <span id="player-score">0</span>
-        <span id="player-hand"> hand</span>
-    </h2>
-
     <div class="gaming-area">
+        <h2 class="score">
+            Your Score :
+            <span id="player-score">0</span>
+            <span id="player-hand"> hand</span>
+        </h2>
+
+
         <div class="player-area" id="player">
             <img src="/assets/images/rock (2).png" alt="rock" id="player-rock">
             <img src="/assets/images/paper.final version.png " alt="paper" id="player-paper">
@@ -40,17 +42,17 @@
 
         </div>
 
-    </div>
-    <!-- computer Gaming area -->
 
-    <h2>
-        Computer Score :
-        <span id="computer-score">0</span>
-        <span id="computer-hand"> hand</span>
-    </h2>
+        <!-- computer Gaming area -->
+
+        <h2 class="score">
+            Computer Score :
+            <span id="computer-score">0</span>
+            <span id="computer-hand"> hand</span>
+        </h2>
 
 
-    <div class="gaming-area">
+
         <div class="computer-area" id="computer">
             <img src="/assets/images/rock (2).png" alt="rock" id="computer-rock">
             <img src="/assets/images/paper.final version.png " alt="paper" id="computer-paper">
@@ -58,6 +60,14 @@
 
         </div>
 
+        <!-- game reset button -->
+
+        <div class="reset">
+            <button class="btn">Replay</button>
+        </div>
+        <!--Game Result area  -->
+
+        <h2 id="game-result">Congratulation , You Won!</h2>
 
         <!-- Score Area
 
@@ -65,10 +75,10 @@
             <p class="scores">Player Score <span id="player-score">0</span></p>
             <p class="scores">Computer Score <span id="computer-score">0</span></p>
         </div> -->
+    </div>
+    <!-- javascript link -->
 
-        <!-- javascript link -->
-
-        <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
