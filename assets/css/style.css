@@ -81,6 +81,11 @@ img {
 }
 
 
+/* selection styling */
+
+.selected {
+    background: blue;
+}
 
 /* Media queriesfor screens that are 600px wide or less*/
 

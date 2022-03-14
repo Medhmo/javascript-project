@@ -16,3 +16,29 @@ const computerscissor = document.getElementById("computer-scissor");
 const gameresult = document.getElementById("game-result");
 
 const gameimages = document.querySelectorAll("img");
+
+// player function
+
+function select(playerselect) {
+    console.log(playerselect);
+}
+
+//styling player selection
+
+switch ("player-hand") {
+    case 'rock':
+        playerrock.classList.add('selected');
+        playerhand.textContent = 'you choose Rock';
+        break;
+    case 'paper':
+        playerpaper.classList.add('selected');
+        playerhand.textContent = 'you choose Paper';
+        break;
+    case 'scissor':
+        playerscissor.classList.add('selected');
+        playerhand.textContent = 'you choose Scissor';
+        break;
+
+    default:
+        break;
+}
