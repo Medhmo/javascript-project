@@ -17,28 +17,44 @@ const gameresult = document.getElementById("game-result");
 
 const gameimages = document.querySelectorAll("img");
 
+//computer hand radomisation
+
+function computerRandomselect() {
+    const computerSelectNumber = Math.random();
+    console.log(computerSelectNumber);
+}
+
+// reset the selected items
+
+function resetselected() {
+    gameimages.forEach((img) => {
+        img.classList.remove("selected")
+    })
+}
 // player function
 
 function select(playerselect) {
     console.log(playerselect);
-}
 
-//styling player selection
 
-switch ("player-hand") {
-    case 'rock':
-        playerrock.classList.add('selected');
-        playerhand.textContent = 'you choose Rock';
-        break;
-    case 'paper':
-        playerpaper.classList.add('selected');
-        playerhand.textContent = 'you choose Paper';
-        break;
-    case 'scissor':
-        playerscissor.classList.add('selected');
-        playerhand.textContent = 'you choose Scissor';
-        break;
+    //styling player selection
 
-    default:
-        break;
+    switch ("playerselect") {
+        case "Rock":
+            playerrock.classList.add("selected");
+            playerhand.textContent = "you choose Rock";
+            break;
+        case 'paper':
+            playerpaper.classList.add("selected");
+            playerhand.textContent = 'you choose Paper';
+            break;
+        case 'scissor':
+            playerscissor.classList.add('selected');
+            playerhand.textContent = 'you choose Scissor';
+            break;
+
+        default:
+            break;
+    }
+    computerRandomselect();
 }

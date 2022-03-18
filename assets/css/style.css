@@ -47,12 +47,14 @@ img {
     background: #99150E;
     border: 2px solid black;
     border-radius: 10px;
+    cursor: grab;
 
 }
 
 .btn {
     width: 120px;
     height: 20px;
+    cursor: pointer;
 
 }
 
