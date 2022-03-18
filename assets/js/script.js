@@ -16,12 +16,45 @@ const computerscissor = document.getElementById("computer-scissor");
 const gameresult = document.getElementById("game-result");
 
 const gameimages = document.querySelectorAll("img");
+let computerselect = "";
 
 //computer hand radomisation
 
 function computerRandomselect() {
     const computerSelectNumber = Math.random();
     console.log(computerSelectNumber);
+    if (computerSelectNumber < 0.3) {
+        computerselect = "rock";
+    } else if (computerselect <= 0.7) {
+        computerselect = "paper";
+    } else {
+        computerselect = "scissor"
+    }
+    displaycomputerselect(computerselect)
+    console.log(computerselect)
+}
+
+// computer selection styling and function
+
+function displaycomputerselect(computerselect) {
+    switch ("computerselect") {
+        case "Rock":
+            computerrock.classList.add("selected");
+            computerhand.textContent = "computer chose Rock";
+            break;
+        case 'paper':
+            computerpaper.classList.add("selected");
+            computerhand.textContent = "computer chose Paper";
+            break;
+        case 'scissor':
+            computerscissor.classList.add('selected');
+            computerhand.textContent = 'computer chose Scissor';
+            break;
+
+        default:
+            break;
+    }
+
 }
 
 // reset the selected items
