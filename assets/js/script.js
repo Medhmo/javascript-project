@@ -37,18 +37,18 @@ function computerRandomselect() {
 // computer selection styling and function
 
 function displaycomputerselect(computerselect) {
-    switch ("computerselect") {
-        case "Rock":
+    switch (computerselect) {
+        case "rock":
             computerrock.classList.add("selected");
-            computerhand.textContent = "computer chose Rock";
+            computerhand.textContent = " /    Rock";
             break;
         case 'paper':
             computerpaper.classList.add("selected");
-            computerhand.textContent = "computer chose Paper";
+            computerhand.textContent = " /    Paper";
             break;
         case 'scissor':
             computerscissor.classList.add('selected');
-            computerhand.textContent = 'computer chose Scissor';
+            computerhand.textContent = '/    Scissor';
             break;
 
         default:
@@ -67,23 +67,24 @@ function resetselected() {
 // player function
 
 function select(playerselect) {
+    resetselected()
     console.log(playerselect);
 
 
     //styling player selection
 
-    switch ("playerselect") {
-        case "Rock":
+    switch (playerselect) {
+        case 'rock':
             playerrock.classList.add("selected");
-            playerhand.textContent = "you choose Rock";
+            playerhand.textContent = '/    Rock';
             break;
         case 'paper':
             playerpaper.classList.add("selected");
-            playerhand.textContent = 'you choose Paper';
+            playerhand.textContent = '/    Paper';
             break;
         case 'scissor':
             playerscissor.classList.add('selected');
-            playerhand.textContent = 'you choose Scissor';
+            playerhand.textContent = '/     Scissor';
             break;
 
         default:
