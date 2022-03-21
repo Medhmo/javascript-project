@@ -17,22 +17,28 @@ const gameresult = document.getElementById("game-result");
 
 const gameimages = document.querySelectorAll("img");
 let computerselect = "";
+let playerscoreNumber = 0;
+let computerscoreNumber = 0;
 
 
 const selections = {
-    Rock: {
-        name: "Rock",
-        defeat: "Scissor"
+    rock: {
+        name: "rock",
+        defeat: "scissor"
     },
-    Paper: {
-        name: "Paper",
-        defeat: "Rock"
+    paper: {
+        name: "paper",
+        defeat: "rock"
     },
-    Scissor: {
-        name: "Scissor",
-        defeat: "Paper"
+    scissor: {
+        name: "scissor",
+        defeat: "paper"
     }
 };
+
+//let computerselect ="" ; 
+
+
 
 //computer hand radomisation
 
@@ -113,11 +119,19 @@ function select(playerselect) {
 // Score Function
 
 function updatescore(playerselect) {
-    console.log(playerselect, computerselect)
+    console.log(playerselect, computerselect);
+    const select = selections[playerselect]
     if (playerselect === computerselect) {
         gameresult.textContent = "It's a Tie";
+    } else if (select.defeat.indexOf(computerselect) > -1) {
+        gameresult.textContent = "You Won ";
+        playerscoreNumber++;
+        playerscore.textContent = playerscoreNumber;
+        // document.body.style.backgroundColor = "green";
+
     } else {
-        const Select = selections[playerselect]
-        console.log(Select)
+        gameresult.textContent = "you Lost";
+        computerscoreNumber++;
+        computerscore.textContent = computerscoreNumber;
     }
 }
