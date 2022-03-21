@@ -45,9 +45,9 @@ const selections = {
 function computerRandomselect() {
     const computerSelectNumber = Math.random();
     console.log(computerSelectNumber);
-    if (computerSelectNumber < 0.35) {
+    if (computerSelectNumber <= 0.35) {
         computerselect = "rock";
-    } else if (computerselect <= 0.65) {
+    } else if (computerselect <= 0.7) {
         computerselect = "paper";
     } else {
         computerselect = "scissor"
@@ -123,15 +123,17 @@ function updatescore(playerselect) {
     const select = selections[playerselect]
     if (playerselect === computerselect) {
         gameresult.textContent = "It's a Tie";
+        document.body.style.background = "white";
     } else if (select.defeat.indexOf(computerselect) > -1) {
         gameresult.textContent = "You Won ";
         playerscoreNumber++;
         playerscore.textContent = playerscoreNumber;
-        // document.body.style.backgroundColor = "green";
+        document.body.style.background = "green";
 
     } else {
         gameresult.textContent = "you Lost";
         computerscoreNumber++;
         computerscore.textContent = computerscoreNumber;
+        document.body.style.background = "red";
     }
 }
