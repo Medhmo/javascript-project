@@ -62,15 +62,15 @@ function displaycomputerselect(computerselect) {
     switch (computerselect) {
         case "rock":
             computerrock.classList.add("selected");
-            computerhand.textContent = " /    Rock";
+            computerhand.textContent = "Computer choose Rock";
             break;
         case 'paper':
             computerpaper.classList.add("selected");
-            computerhand.textContent = " /    Paper";
+            computerhand.textContent = "Computer choose Paper";
             break;
         case 'scissor':
             computerscissor.classList.add('selected');
-            computerhand.textContent = '/    Scissor';
+            computerhand.textContent = 'Computer choose Scissor';
             break;
 
         default:
@@ -98,15 +98,15 @@ function select(playerselect) {
     switch (playerselect) {
         case 'rock':
             playerrock.classList.add("selected");
-            playerhand.textContent = '/    Rock';
+            playerhand.textContent = 'You choose Rock';
             break;
         case 'paper':
             playerpaper.classList.add("selected");
-            playerhand.textContent = '/    Paper';
+            playerhand.textContent = 'You choose Paper ';
             break;
         case 'scissor':
             playerscissor.classList.add('selected');
-            playerhand.textContent = '/     Scissor';
+            playerhand.textContent = 'You choose Scissor';
             break;
 
         default:
@@ -114,6 +114,8 @@ function select(playerselect) {
     }
     computerRandomselect();
     updatescore(playerselect, computerselect);
+
+    //searchtimeout
 }
 
 // Score Function
@@ -122,18 +124,15 @@ function updatescore(playerselect) {
     console.log(playerselect, computerselect);
     const select = selections[playerselect]
     if (playerselect === computerselect) {
-        gameresult.textContent = "It's a Tie";
-        document.body.style.background = "white";
+        gameresult.textContent = "It's a Tie !";
     } else if (select.defeat.indexOf(computerselect) > -1) {
-        gameresult.textContent = "You Won ";
+        gameresult.textContent = "You Won !";
         playerscoreNumber++;
         playerscore.textContent = playerscoreNumber;
-        document.body.style.background = "green";
 
     } else {
-        gameresult.textContent = "you Lost";
+        gameresult.textContent = "You Lost !";
         computerscoreNumber++;
         computerscore.textContent = computerscoreNumber;
-        document.body.style.background = "red";
     }
 }

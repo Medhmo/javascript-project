@@ -10,14 +10,12 @@
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: x-large;
-    background-color: azure;
 
 }
 
 .heading {
     background-color: #A9C5FF;
-    width: 500px;
-    height: 10px;
+    color: #1119BA;
     text-align: center;
 
 }
@@ -26,18 +24,17 @@
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: x-large;
-    width: 500px;
+    /* width: 500px; */
     height: 20px;
     padding-top: 40px;
-    font-weight: bold;
 }
 
 /* body styling */
 
 body {
 
-    min-height: 100vh;
-
+    /* min-height: 100vh; */
+    background-color: #A9C5FF;
 }
 
 /* Gaming area Styling */
@@ -45,8 +42,8 @@ body {
 .gaming-area {
     background-color: #A9C5FF;
     margin-top: 10px;
-    width: 500px;
-    height: 700px;
+    /* width: 500px;
+    height: 800px; */
     text-align: center;
 
 
@@ -95,8 +92,32 @@ img {
 
 #game-result {
     text-align: center;
+    padding-bottom: 25px;
+    font-size: x-large;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    color: #1119BA;
 }
 
+.rules-h3 {
+    font-size: x-large;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.rules-h4 {
+    font-size: x-large;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.rules-p1 {
+    font-size: large;
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 /* selection styling */
 
@@ -109,35 +130,40 @@ img {
 /* heading styling */
 
 @media screen and (max-width: 600px) {
+
     .heading {
         background-color: #A9C5FF;
-        width: 380px;
+        width: 370px;
         height: 50px;
         /* padding-top: 20px; */
         text-align: left;
         padding-left: 10px;
+        text-align: center;
     }
 
     /* gaming area styling */
 
+
     .score {
-        text-align: left;
-        margin-left: 40px;
+        text-align: center;
+        padding-right: 60px;
+        /* margin-left: 40px; */
+
     }
 
-    #player-hand {
+    /* #player-hand {
         text-align: left;
         padding-top: 10px;
-    }
+    } */
 
     #game-result {
         text-align: left;
-        margin-left: 140px;
+        margin-left: 110px;
     }
 
     .reset {
         text-align: left;
-        margin-left: 120px;
+        margin-left: 90px;
         padding-top: 25px;
         cursor: pointer;
         margin-bottom: 20px;
@@ -147,21 +173,67 @@ img {
         text-align: center;
         font-family: 'Montserrat', sans-serif;
         font-size: x-large;
-        width: 500px;
+        width: 370px;
         height: 20px;
-        padding-top: 10px;
+        padding-top: 30px;
         font-weight: bold;
         text-align: left;
-        padding-left: 40px;
+        padding-left: 20px;
     }
 
     .gaming-area {
         background-color: #A9C5FF;
         margin-top: 10px;
-        width: 500px;
-        height: 700px;
+        width: 370px;
+        /* height: 700px; */
         text-align: left;
-
-
     }
+
+    .rules-h3 {
+        font-size: x-large;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        width: 370px;
+        text-align: left;
+        margin-left: 110px;
+    }
+
+    .rules-h4 {
+        font-size: x-large;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        width: 370px;
+        padding-right: 120px;
+    }
+
+    .rules-p1 {
+        font-size: large;
+        font-weight: normal;
+        font-family: 'Montserrat', sans-serif;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        width: 370px;
+    }
+
+    img {
+        width: 75px;
+        margin: 0 9px;
+        margin-top: 25px;
+        padding-bottom: 20px;
+        background: #99150E;
+        border: 2px solid black;
+        border-radius: 10px;
+        cursor: grab;
+    }
+
+    /* .heading-d {
+
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: x-large;
+        width: 370px;
+
+    } */
 }

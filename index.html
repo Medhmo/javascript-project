@@ -28,29 +28,13 @@
 
 
         <!-- Gaming area -->
-        <!-- player Gaming area -->
-
-
-        <h2 class="score"> Player Score :
-            <span id="player-score">0</span>
-            <span id="player-hand">/ Hand</span>
-        </h2>
-
-
-        <div class="player-area" id="player">
-            <img src="/assets/images/rock (2).png" alt="rock" id="player-rock" onclick="select('rock')">
-            <img src="/assets/images/paper.final version.png " alt="paper" id="player-paper" onclick="select('paper')">
-            <img src="/assets/images/scissors (1).png" alt="scissor" id="player-scissor" onclick="select('scissor')">
-
-        </div>
-
 
         <!-- computer Gaming area -->
 
         <h2 class="score">
             Computer Score :
-            <span id="computer-score">0</span>
-            <span id="computer-hand">/ Hand</span>
+            <div id="computer-score">0</div>
+            <div id="computer-hand">Computer hand :</div>
         </h2>
 
 
@@ -62,6 +46,23 @@
 
         </div>
 
+        <!-- player Gaming area -->
+
+
+        <h2 class="score"> Player Score :
+            <div id="player-score">0</div>
+            <div id="player-hand">Player hand :</div>
+        </h2>
+
+
+        <div class="player-area" id="player">
+            <img src="/assets/images/rock (2).png" alt="rock" id="player-rock" onclick="select('rock')">
+            <img src="/assets/images/paper.final version.png " alt="paper" id="player-paper" onclick="select('paper')">
+            <img src="/assets/images/scissors (1).png" alt="scissor" id="player-scissor" onclick="select('scissor')">
+
+        </div>
+
+
         <!-- game reset button -->
 
         <div class="reset">
@@ -72,8 +73,15 @@
 
         <h2 id="game-result">Result</h2>
 
-
-
+        <h3 class="rules-h3">How to play</h3>
+        <p class="rules-p1">Choose a hand beetwen Rock , Paper and Scissor.</p>
+        <h4 class="rules-h4">Rules</h4>
+        <p class="rules-p1">The rules are very simple .
+            Rock defeat Scissor ,
+            Scissor defeat Paper,
+            Paper defeat Rock.
+            Have fun!
+        </p>
     </div>
 
     <!-- javascript link -->
