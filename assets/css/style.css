@@ -24,7 +24,6 @@
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: x-large;
-    /* width: 500px; */
     height: 20px;
     padding-top: 40px;
 }
@@ -32,10 +31,8 @@
 /* body styling */
 
 body {
-
-    /* min-height: 100vh; */
     background-color: #A9C5FF;
-    width: 90% vw;
+    width: 90vw;
 }
 
 /* Gaming area Styling */
@@ -43,11 +40,7 @@ body {
 .gaming-area {
     background-color: #A9C5FF;
     margin-top: 10px;
-    /* width: 500px;
-    height: 800px; */
     text-align: center;
-
-
 }
 
 img {
@@ -59,19 +52,17 @@ img {
     border: 2px solid black;
     border-radius: 10px;
     cursor: grab;
-
 }
 
 .btn {
     width: 120px;
     height: 20px;
     cursor: pointer;
-
 }
 
 .reset {
-    margin-top: 25px;
-    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-bottom: 30px;
     text-align: center;
 
 }
@@ -93,7 +84,8 @@ img {
 
 #game-result {
     text-align: center;
-    padding-bottom: 25px;
+    padding-bottom: 15px;
+    padding-top: 20px;
     font-size: x-large;
     font-weight: bolder;
     font-family: 'Montserrat', sans-serif;
@@ -120,10 +112,23 @@ img {
     padding-bottom: 10px;
 }
 
+
 /* selection styling */
 
 .selected {
     background: blue;
+}
+
+#computer-score,
+#computer-hand {
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+#player-score,
+#player-hand {
+    font-size: x-large;
+    font-weight: bolder;
 }
 
 /* Media queriesfor screens that are 600px wide or less*/
@@ -136,7 +141,6 @@ img {
         background-color: #A9C5FF;
         width: 370px;
         height: 50px;
-        /* padding-top: 20px; */
         text-align: left;
         padding-left: 5px;
         text-align: center;
@@ -150,27 +154,20 @@ img {
 
     .score {
         text-align: center;
-        padding-right: 60px;
-        /* margin-left: 40px; */
-
+        padding-right: 20px;
     }
-
-    /* #player-hand {
-        text-align: left;
-        padding-top: 10px;
-    } */
 
     #game-result {
         text-align: left;
-        margin-left: 110px;
+        margin-left: 150px;
     }
 
     .reset {
         text-align: left;
-        margin-left: 90px;
-        padding-top: 25px;
+        margin-left: 125px;
+        padding-top: 10px;
         cursor: pointer;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 
     .heading-p {
@@ -188,9 +185,8 @@ img {
     .gaming-area {
         background-color: #A9C5FF;
         margin-top: 10px;
-        width: 370px;
-        /* height: 700px; */
-        text-align: left;
+        max-width: 370px;
+        text-align: center;
     }
 
     .rules-h3 {
@@ -199,7 +195,7 @@ img {
         font-family: 'Montserrat', sans-serif;
         width: 370px;
         text-align: left;
-        margin-left: 80px;
+        margin-left: 110px;
     }
 
     .rules-h4 {
@@ -208,7 +204,7 @@ img {
         font-family: 'Montserrat', sans-serif;
         width: 370px;
         text-align: left;
-        margin-left: 120px;
+        margin-left: 150px;
     }
 
     .rules-p1 {
@@ -231,13 +227,4 @@ img {
         border-radius: 10px;
         cursor: grab;
     }
-
-    /* .heading-d {
-
-        text-align: center;
-        font-family: 'Montserrat', sans-serif;
-        font-size: x-large;
-        width: 370px;
-
-    } */
 }

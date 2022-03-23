@@ -20,7 +20,6 @@ let computerselect = "";
 let playerscoreNumber = 0;
 let computerscoreNumber = 0;
 
-
 const selections = {
     rock: {
         name: "rock",
@@ -36,15 +35,10 @@ const selections = {
     }
 };
 
-//let computerselect ="" ; 
-
-
-
-//computer hand radomisation
+//computer hand radomisation function
 
 function computerRandomselect() {
     const computerSelectNumber = Math.random();
-    console.log(computerSelectNumber);
     if (computerSelectNumber <= 0.35) {
         computerselect = "rock";
     } else if (computerselect <= 0.7) {
@@ -79,21 +73,17 @@ function displaycomputerselect(computerselect) {
 
 }
 
-// reset the selected items
+// reset the selected items function
 
 function resetselected() {
     gameimages.forEach((img) => {
         img.classList.remove("selected")
     })
 }
-// player function
+// player area and selection functions
 
 function select(playerselect) {
     resetselected()
-
-
-
-    //styling player selection
 
     switch (playerselect) {
         case 'rock':
@@ -115,13 +105,10 @@ function select(playerselect) {
     computerRandomselect();
     updatescore(playerselect, computerselect);
 
-    //searchtimeout
 }
-
 // Score Function
 
 function updatescore(playerselect) {
-    console.log(playerselect, computerselect);
     const select = selections[playerselect]
     if (playerselect === computerselect) {
         gameresult.textContent = "It's a Tie !";
