@@ -133,14 +133,14 @@ function updatescore(playerselect) {
 
     if (round === 0) {
         if (playerscoreNumber > computerscoreNumber)
-            alert("CONGRATULATIONS YOU WON");
+            alert("GAME OVER :CONGRATULATIONS YOU WON");
         gameresult.textContent = "Game Over"
 
         if (playerscoreNumber < computerscoreNumber)
-            alert("BETTER LUCK NEXT TIME");
+            alert("GAME OVER : SORRY YOU LOST BETTER LUCK NEXT TIME");
 
         if (playerscoreNumber === computerscoreNumber)
-            alert("IT S A TIE")
+            alert("GAME OVER :IT S A TIE")
         window.location.reload()
         movesLeft = ""
     }
