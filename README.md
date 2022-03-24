@@ -17,13 +17,14 @@ This site is targeted toward users with no restriction on age , background , cul
 
 # **Features**
 
-The website is made eigth elements : 
+The website is made nine elements : 
 ---
 - The game title at the top of the page .
 - A brief welcoming text.
 - A computer play area with the computer score tracker and a computer hand selection and also a computer selection display.
 - A player play area with the player score tracker and a player hand selection and also a player selection display .
 - A display area for the result for each hands played ( each turn taken by both the usser and the computer).
+- A display area for the remaining moves count.
 - A replay button that reset both the player and computer hands ( hand selection and score display).
 - A brief section about how the game is played.
 - A brief set of rules .
@@ -41,9 +42,9 @@ The website is made eigth elements :
 
 ![Player s  play area](https://github.com/Medhmo/javascript-project/blob/main/assets/images/player-play-area.png)
 
-- This area is where the player hand selection occurs. This is  where the player choose what hand to play beetwen rock ,paper or scissors.the selecion is displayed and this area also keep track of the number of times the player won a hand (round) .
+- This area is where the player hand selection occurs. This is  where the player choose what hand to play beetwen rock ,paper or scissors.the selecion is displayed and this area also keep track of the number of times the player won a hand (round).
 
-![Result and replay area](https://github.com/Medhmo/javascript-project/blob/main/assets/images/hand-result-and-replay-area.png)
+![Result and replay area](https://github.com/Medhmo/javascript-project/blob/main/assets/images/result-replay-movecount-area.png)
 
 - This is where a display text conform if the player as won , lost or tied the hand (round). This is also where the player can manually reset the game.
 
@@ -76,14 +77,74 @@ The website is made eigth elements :
 
 - HTML
 
-![W3C validator]()
-![W3C validator]()
+![W3C validator](https://github.com/Medhmo/javascript-project/blob/main/assets/images/Html-validator-errors.png)
+
+As displayed in the above image I had a fews errors in my HTML file due to the fact that I had somes spaces in the images name in my images folders . It was an easy fix as I only had to rename the files both on my desktop and images folder.
+Find bellow the report after adressing the errors.
+![W3C validator](https://github.com/Medhmo/javascript-project/blob/main/assets/images/Html-validator-errors-fixed.png)
 
 - CSS
 
-![W3C validator]()
-![W3C validator]()
+![W3C validator](https://github.com/Medhmo/javascript-project/blob/main/assets/images/css-errors.png)
+
+As displayed in the above image I had an error in my CSS file due to the fact that I had used both % and vw in my css code . It was an easy fix as I only had to remove the % from the css code.
+Find bellow the reports after adressing the errors.
+![W3C validator](https://github.com/Medhmo/javascript-project/blob/main/assets/images/css-errors-fixed.png)
+![W3C validator](https://github.com/Medhmo/javascript-project/blob/main/assets/images/final-version-css-validator.png)
 
 -JAVASCRIPT
 
-![W3C validator]()
+![W3C validator](https://github.com/Medhmo/javascript-project/blob/main/assets/images/javascript-validator.png)
+
+I had no errors in my JS files due to constant debuging in the devtools on chrome.
+
+# Accessibility #
+
+I have confirmed that all the accesibilitty criterias were meet  as shown in the lighthouse reports below .
+
+- Desktop lighthouse report
+
+![desktop report](https://github.com/Medhmo/javascript-project/blob/main/assets/images/lighthouse-report-for%3Ddesktop.png)
+
+- Mobile lighthouse report
+
+![Mobile report](https://github.com/Medhmo/javascript-project/blob/main/assets/images/ligthhouse-report-for-mobile-devicesd.png)
+
+
+# Deployment #
+- The site was deployed to GitHub pages . The deployment steps are as follows:
+    - In my project GitHub repository , at the top right click the setting tab 
+    - From the source section , select main Branch
+    - Once selected , the page will generate a live link for the website.
+
+The live link to my project website 
+- [Rock Paper Scissor game](https://medhmo.github.io/javascript-project/)
+
+# Credit #
+
+I have used :
+- Google fonts for my fonts 
+- Escosia websearch for my images
+- Git for my version control 
+- W3 School mainly for most of my learning material
+- Code Institute learning material 
+- Youtube for tutorial videos to reinforce the learning material
+- Markdown Guide website
+- Snip and Sketch
+- MDN web Docs
+- ami.responsive 
+- GitHub for deployment
+- Js validator.com for my javascript validation
+- W3C for my HTML validation
+- Jigsaw for my CSS validation 
+
+# Honorable Mentions #
+Special thanks to :
+- Code Institute and it s communitty
+- My mentor Jack Wachira
+- Our Cohort Facilitator Kasia Bogucka
+
+# Future Implimentation for the website #
+
+In future versions of this site we will be adding extra content to the game .
+And improving the look and feel for a better user experience.
