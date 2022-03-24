@@ -92,6 +92,13 @@ img {
     color: #1119BA;
 }
 
+#moves-left {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
 .rules-h3 {
     font-size: x-large;
     font-weight: bold;
@@ -111,6 +118,7 @@ img {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
 
 
 /* selection styling */

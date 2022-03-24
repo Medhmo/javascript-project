@@ -35,6 +35,9 @@ const selections = {
     }
 };
 
+let round = 10;
+var movesLeft = document.getElementById("moves-left");
+
 //computer hand radomisation function
 
 function computerRandomselect() {
@@ -73,6 +76,8 @@ function displaycomputerselect(computerselect) {
 
 }
 
+
+
 // reset the selected items function
 
 function resetselected() {
@@ -110,8 +115,10 @@ function select(playerselect) {
 
 function updatescore(playerselect) {
     const select = selections[playerselect]
+
     if (playerselect === computerselect) {
         gameresult.textContent = "It's a Tie !";
+
     } else if (select.defeat.indexOf(computerselect) > -1) {
         gameresult.textContent = "You Won !";
         playerscoreNumber++;
@@ -122,4 +129,23 @@ function updatescore(playerselect) {
         computerscoreNumber++;
         computerscore.textContent = computerscoreNumber;
     }
+
+
+    if (round === 0) {
+        if (playerscoreNumber > computerscoreNumber)
+            alert("CONGRATULATIONS YOU WON");
+        gameresult.textContent = "Game Over"
+
+        if (playerscoreNumber < computerscoreNumber)
+            alert("BETTER LUCK NEXT TIME");
+
+        if (playerscoreNumber === computerscoreNumber)
+            alert("IT S A TIE")
+        window.location.reload()
+        movesLeft = ""
+    }
+
+    round--;
+    movesLeft.textContent = ` Moves remaining ${round} `;
+
 }
