@@ -28,5 +28,9 @@ The website is made eigth elements :
 - A brief section about how the game is played.
 - A brief set of rules .
 
-! [alt text]()
+! [alt text](https://github.com/Medhmo/javascript-project/blob/main/assets/images/title-and-gaming-area.png)
+! [alt text](https://github.com/Medhmo/javascript-project/blob/main/assets/images/gaming-area-and-how-to-play-area.png)
 
+# **Page elements**
+
+![alt text]()
