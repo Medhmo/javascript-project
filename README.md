@@ -13,3 +13,20 @@ This site is targeted toward users with no restriction on age , background , cul
 
 
 
+![alt text](https://github.com/Medhmo/javascript-project/blob/main/assets/images/am-i-responsive-report.png)
+
+# **Features**
+
+The website is made eigth elements : 
+---
+- The game title at the top of the page .
+- A brief welcoming text.
+- A computer play area with the computer score tracker and a computer hand selection and also a computer selection display.
+- A player play area with the player score tracker and a player hand selection and also a player selection display .
+- A display area for the result for each hands played ( each turn taken by both the usser and the computer).
+- A replay button that reset both the player and computer hands ( hand selection and score display).
+- A brief section about how the game is played.
+- A brief set of rules .
+
+! [alt text]()
+
