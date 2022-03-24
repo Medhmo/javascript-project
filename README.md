@@ -33,4 +33,36 @@ The website is made eigth elements :
 
 # **Page elements**
 
-![alt text]()
+![alt text](https://github.com/Medhmo/javascript-project/blob/main/assets/images/tittle-greeting.png)
+
+- The area greats and welcome the user.
+
+![alt text](https://github.com/Medhmo/javascript-project/blob/main/assets/images/computer-play-area.png)
+
+- This area is where the computer random hand selection occurs. this is also where the computer selecion is display to show the player if the computer choose rock ,paper or scissors. this area also keep track of the number of times the computer won a hand (round).
+
+
+![alt text](https://github.com/Medhmo/javascript-project/blob/main/assets/images/player-play-area.png)
+
+- This area is where the player hand selection occurs. This is  where the player choose what hand to play beetwen rock ,paper or scissors.the selecion is displayed and this area also keep track of the number of times the player won a hand (round).
+![alt text](https://github.com/Medhmo/javascript-project/blob/main/assets/images/hand-result-and-replay-area.png)
+
+
+
+![alt text](https://github.com/Medhmo/javascript-project/blob/main/assets/images/hand-result-and-replay-area.png)
+
+- This is where a display text conform if the player as won , lost or tied the hand (round). This is also where the player can manually reset the game.
+
+![alt text](https://github.com/Medhmo/javascript-project/blob/main/assets/images/how-to-play-area.png)
+
+- this area is where the player is informed of what the game is about and also given the rules of the game . This area has been keep very simple to help the younger user have a great user experence.
+
+# Testing #
+---
+- I have tested the page in differents browsers: bing and chrome.
+- I have also sent a link to friends and family to confirm the responsivness accross differents devices.
+- I have checker and confirmed that the project looks as it should .
+- I have checked and confirmed that the website passes the ligth house report testing with a score of 97 on desktop and 100 on mobile.
+- I have checked and confirmed  that the text sizes and colour contrast well with the  back ground.
+- I have checked and confirmed that the replay button works .
+- I have checked and confirmed that all the 
