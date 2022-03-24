@@ -13,7 +13,7 @@ This site is targeted toward users with no restriction on age , background , cul
 
 
 
-![alt text](https://github.com/Medhmo/javascript-project/blob/main/assets/images/am-i-responsive-report.png)
+![Am i responsive report](https://github.com/Medhmo/javascript-project/blob/main/assets/images/am-i-responsive-report.png)
 
 # **Features**
 
@@ -28,32 +28,26 @@ The website is made eigth elements :
 - A brief section about how the game is played.
 - A brief set of rules .
 
-! [alt text](https://github.com/Medhmo/javascript-project/blob/main/assets/images/title-and-gaming-area.png)
-! [alt text](https://github.com/Medhmo/javascript-project/blob/main/assets/images/gaming-area-and-how-to-play-area.png)
-
 # **Page elements**
 
-![alt text](https://github.com/Medhmo/javascript-project/blob/main/assets/images/tittle-greeting.png)
+![Title and greeting area](https://github.com/Medhmo/javascript-project/blob/main/assets/images/tittle-greeting.png)
 
 - The area greats and welcome the user.
 
-![alt text](https://github.com/Medhmo/javascript-project/blob/main/assets/images/computer-play-area.png)
+![computer play area](https://github.com/Medhmo/javascript-project/blob/main/assets/images/computer-play-area.png)
 
-- This area is where the computer random hand selection occurs. this is also where the computer selecion is display to show the player if the computer choose rock ,paper or scissors. this area also keep track of the number of times the computer won a hand (round).
-
-
-![alt text](https://github.com/Medhmo/javascript-project/blob/main/assets/images/player-play-area.png)
-
-- This area is where the player hand selection occurs. This is  where the player choose what hand to play beetwen rock ,paper or scissors.the selecion is displayed and this area also keep track of the number of times the player won a hand (round).
-![alt text](https://github.com/Medhmo/javascript-project/blob/main/assets/images/hand-result-and-replay-area.png)
+- This area is where the computer random hand selection occurs. this is also where the computer selecion is display to show the player if the computer choose rock ,paper or scissors. this area also keep track of the number of times the computer won a hand.
 
 
+![Player s  play area](https://github.com/Medhmo/javascript-project/blob/main/assets/images/player-play-area.png)
 
-![alt text](https://github.com/Medhmo/javascript-project/blob/main/assets/images/hand-result-and-replay-area.png)
+- This area is where the player hand selection occurs. This is  where the player choose what hand to play beetwen rock ,paper or scissors.the selecion is displayed and this area also keep track of the number of times the player won a hand (round) .
+
+![Result and replay area](https://github.com/Medhmo/javascript-project/blob/main/assets/images/hand-result-and-replay-area.png)
 
 - This is where a display text conform if the player as won , lost or tied the hand (round). This is also where the player can manually reset the game.
 
-![alt text](https://github.com/Medhmo/javascript-project/blob/main/assets/images/how-to-play-area.png)
+![How to play area](https://github.com/Medhmo/javascript-project/blob/main/assets/images/how-to-play-area.png)
 
 - this area is where the player is informed of what the game is about and also given the rules of the game . This area has been keep very simple to help the younger user have a great user experence.
 
@@ -65,4 +59,31 @@ The website is made eigth elements :
 - I have checked and confirmed that the website passes the ligth house report testing with a score of 97 on desktop and 100 on mobile.
 - I have checked and confirmed  that the text sizes and colour contrast well with the  back ground.
 - I have checked and confirmed that the replay button works .
-- I have checked and confirmed that all the 
+- I have checked and confirmed that all the player hand icons work .
+- I have checked and confirmed that all the computer hand icons work .
+- I have checked and confirmed that the both the player score and player hand area work as intended and also updates as the game progresses.
+- I have checked and confirmed that the both the computer score and computer hand area works as intended and also updates as the game progresses.
+- I have checked and confirmed that the result area works as intended and also updates as the game progresses.
+- I have checked and confirmed that the remaining hand counting area works as intended and also updates as the game progresses.
+- I have checked and confirmed that the alerts messages for the game outcome after all 10 rounds of hands have been played works as expected.
+
+
+# Bugs #
+
+- There are no unsolved bugs.
+
+# Validator Testing #
+
+- HTML
+
+![W3C validator]()
+![W3C validator]()
+
+- CSS
+
+![W3C validator]()
+![W3C validator]()
+
+-JAVASCRIPT
+
+![W3C validator]()
